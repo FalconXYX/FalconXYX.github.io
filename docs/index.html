@@ -1,29 +1,1050 @@
 <!DOCTYPE html>
-
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/png" href="./favicon.png" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap"
-      rel="stylesheet"
-    />
-    <title>Parth Jain</title>
-    <script type="module" crossorigin src="./assets/index-BL4_h8sv.js"></script>
-    <link rel="stylesheet" crossorigin href="./assets/index-I65wZahh.css">
-  </head>
-  <body>
-    <div id="root"></div>
-    <script
-      type="module"
-      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
-    ></script>
-    <script
-      nomodule
-      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
-    ></script>
-  </body>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+  <title>Parth Jain</title>
+  <!-- Favicon-->
+  <link rel="icon" type="image/x-icon" href="assets/favicon.png" />
+  <!-- Custom Google font-->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+    rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Funnel+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet" />
+  <!-- Bootstrap icons-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" rel="stylesheet" />
+  <!-- Core theme CSS (includes Bootstrap)-->
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <link href="css/styles.css" rel="stylesheet" />
+</head>
+
+<body class="d-flex flex-column h-100">
+  <nav class="navbar navbar-expand-lg navbar-light bg-white py-3 sticky-top custom-header">
+    <div class="container px-5">
+      <a class="navbar-brand mt-2" href="index.html">
+        <span class="fw-bolder h3 cursive">Parth Jain</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 lead fw-bolder">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#resume">Resume</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#projects">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#blog">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <header class="py-5">
+    <div class="container px-5 pb-5 ">
+      <div class="row gx-5 align-items-center">
+        <div class="col-xxl-5">
+          <!-- Header text content-->
+          <div class="text-center text-xxl-start">
+            <h1 class="display-3 fw-bolder">
+              <span class="text-gradient d-inline">Hi, I'm Parth</span>
+            </h1>
+            <div class="fs-3 fw-light text-muted mb-5">
+              I’m an aspiring full-stack developer currently studying at the
+              University of Toronto. Feel free to get in touch if you're
+              interested in learning more!
+            </div>
+
+            <div class="d-grid gap-3 d-sm-flex justify-content-sm-center justify-content-xxl-start mb-3">
+              <!-- Resume Button with Tooltip -->
+              <a class="btn btn-primary btn-outline-light btn-lg px-5 py-3 me-sm-3 fs-6 fw-bolder" href="#resume"
+                data-bs-toggle="tooltip" data-bs-placement="top" title="View my resume">
+                Resume
+              </a>
+
+              <!-- Projects Button with Tooltip -->
+              <a class="btn btn-outline-dark btn-lg px-5 py-3 fs-6 fw-bolder" href="#projects" data-bs-toggle="tooltip"
+                data-bs-placement="top" title="Check out my projects">
+                Projects
+              </a>
+            </div>
+
+          </div>
+        </div>
+        <div class="col-xxl-7">
+          <!-- Header profile picture   id="three-container" -->
+
+          <div class="d-flex justify-content-center mt- mt-xxl-0">
+            <div class="profile bg-gradient-primary-to-secondary">
+              <img class="profile-img" src="assets/profile.png" alt="..." />
+              <div class="dots-1">
+                <!-- SVG Dots-->
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+                  y="0px" viewBox="0 0 191.6 1215.4" style="enable-background: new 0 0 191.6 1215.4"
+                  xml:space="preserve">
+                  <g transform="translate(0.000000,1280.000000) scale(0.100000,-0.100000)">
+                    <path
+                      d="M227.7,12788.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,12801.6,289.7,12808.6,227.7,12788.6z">
+                    </path>
+                    <path
+                      d="M1507.7,12788.6c-151-50-253-216-222-362c25-119,136-230,254-255c194-41,395,142,375,339c-11,105-90,213-190,262        C1663.7,12801.6,1569.7,12808.6,1507.7,12788.6z">
+                    </path>
+                    <path
+                      d="M227.7,11508.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,11521.6,289.7,11528.6,227.7,11508.6z">
+                    </path>
+                    <path
+                      d="M1507.7,11508.6c-151-50-253-216-222-362c25-119,136-230,254-255c194-41,395,142,375,339c-11,105-90,213-190,262        C1663.7,11521.6,1569.7,11528.6,1507.7,11508.6z">
+                    </path>
+                    <path
+                      d="M227.7,10228.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,10241.6,289.7,10248.6,227.7,10228.6z">
+                    </path>
+                    <path
+                      d="M1507.7,10228.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,10241.6,1569.7,10248.6,1507.7,10228.6z">
+                    </path>
+                    <path
+                      d="M227.7,8948.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,8961.6,289.7,8968.6,227.7,8948.6z">
+                    </path>
+                    <path
+                      d="M1507.7,8948.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,8961.6,1569.7,8968.6,1507.7,8948.6z">
+                    </path>
+                    <path
+                      d="M227.7,7668.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,7681.6,289.7,7688.6,227.7,7668.6z">
+                    </path>
+                    <path
+                      d="M1507.7,7668.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,7681.6,1569.7,7688.6,1507.7,7668.6z">
+                    </path>
+                    <path
+                      d="M227.7,6388.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,6401.6,289.7,6408.6,227.7,6388.6z">
+                    </path>
+                    <path
+                      d="M1507.7,6388.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,6401.6,1569.7,6408.6,1507.7,6388.6z">
+                    </path>
+                    <path
+                      d="M227.7,5108.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,5121.6,289.7,5128.6,227.7,5108.6z">
+                    </path>
+                    <path
+                      d="M1507.7,5108.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,5121.6,1569.7,5128.6,1507.7,5108.6z">
+                    </path>
+                    <path
+                      d="M227.7,3828.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,3841.6,289.7,3848.6,227.7,3828.6z">
+                    </path>
+                    <path
+                      d="M1507.7,3828.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,3841.6,1569.7,3848.6,1507.7,3828.6z">
+                    </path>
+                    <path
+                      d="M227.7,2548.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,2561.6,289.7,2568.6,227.7,2548.6z">
+                    </path>
+                    <path
+                      d="M1507.7,2548.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,2561.6,1569.7,2568.6,1507.7,2548.6z">
+                    </path>
+                    <path
+                      d="M227.7,1268.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,1281.6,289.7,1288.6,227.7,1268.6z">
+                    </path>
+                    <path
+                      d="M1507.7,1268.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,1281.6,1569.7,1288.6,1507.7,1268.6z">
+                    </path>
+                  </g>
+                </svg>
+                <!-- END of SVG dots-->
+              </div>
+              <div class="dots-2">
+                <!-- SVG Dots-->
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+                  y="0px" viewBox="0 0 191.6 1215.4" style="enable-background: new 0 0 191.6 1215.4"
+                  xml:space="preserve">
+                  <g transform="translate(0.000000,1280.000000) scale(0.100000,-0.100000)">
+                    <path
+                      d="M227.7,12788.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,12801.6,289.7,12808.6,227.7,12788.6z">
+                    </path>
+                    <path
+                      d="M1507.7,12788.6c-151-50-253-216-222-362c25-119,136-230,254-255c194-41,395,142,375,339c-11,105-90,213-190,262        C1663.7,12801.6,1569.7,12808.6,1507.7,12788.6z">
+                    </path>
+                    <path
+                      d="M227.7,11508.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,11521.6,289.7,11528.6,227.7,11508.6z">
+                    </path>
+                    <path
+                      d="M1507.7,11508.6c-151-50-253-216-222-362c25-119,136-230,254-255c194-41,395,142,375,339c-11,105-90,213-190,262        C1663.7,11521.6,1569.7,11528.6,1507.7,11508.6z">
+                    </path>
+                    <path
+                      d="M227.7,10228.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,10241.6,289.7,10248.6,227.7,10228.6z">
+                    </path>
+                    <path
+                      d="M1507.7,10228.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,10241.6,1569.7,10248.6,1507.7,10228.6z">
+                    </path>
+                    <path
+                      d="M227.7,8948.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,8961.6,289.7,8968.6,227.7,8948.6z">
+                    </path>
+                    <path
+                      d="M1507.7,8948.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,8961.6,1569.7,8968.6,1507.7,8948.6z">
+                    </path>
+                    <path
+                      d="M227.7,7668.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,7681.6,289.7,7688.6,227.7,7668.6z">
+                    </path>
+                    <path
+                      d="M1507.7,7668.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,7681.6,1569.7,7688.6,1507.7,7668.6z">
+                    </path>
+                    <path
+                      d="M227.7,6388.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,6401.6,289.7,6408.6,227.7,6388.6z">
+                    </path>
+                    <path
+                      d="M1507.7,6388.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,6401.6,1569.7,6408.6,1507.7,6388.6z">
+                    </path>
+                    <path
+                      d="M227.7,5108.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,5121.6,289.7,5128.6,227.7,5108.6z">
+                    </path>
+                    <path
+                      d="M1507.7,5108.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,5121.6,1569.7,5128.6,1507.7,5108.6z">
+                    </path>
+                    <path
+                      d="M227.7,3828.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,3841.6,289.7,3848.6,227.7,3828.6z">
+                    </path>
+                    <path
+                      d="M1507.7,3828.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,3841.6,1569.7,3848.6,1507.7,3828.6z">
+                    </path>
+                    <path
+                      d="M227.7,2548.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,2561.6,289.7,2568.6,227.7,2548.6z">
+                    </path>
+                    <path
+                      d="M1507.7,2548.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,2561.6,1569.7,2568.6,1507.7,2548.6z">
+                    </path>
+                    <path
+                      d="M227.7,1268.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,1281.6,289.7,1288.6,227.7,1268.6z">
+                    </path>
+                    <path
+                      d="M1507.7,1268.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,1281.6,1569.7,1288.6,1507.7,1268.6z">
+                    </path>
+                  </g>
+                </svg>
+                <!-- END of SVG dots-->
+              </div>
+              <div class="dots-3">
+                <!-- SVG Dots-->
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+                  y="0px" viewBox="0 0 191.6 1215.4" style="enable-background: new 0 0 191.6 1215.4"
+                  xml:space="preserve">
+                  <g transform="translate(0.000000,1280.000000) scale(0.100000,-0.100000)">
+                    <path
+                      d="M227.7,12788.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,12801.6,289.7,12808.6,227.7,12788.6z">
+                    </path>
+                    <path
+                      d="M1507.7,12788.6c-151-50-253-216-222-362c25-119,136-230,254-255c194-41,395,142,375,339c-11,105-90,213-190,262        C1663.7,12801.6,1569.7,12808.6,1507.7,12788.6z">
+                    </path>
+                    <path
+                      d="M227.7,11508.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,11521.6,289.7,11528.6,227.7,11508.6z">
+                    </path>
+                    <path
+                      d="M1507.7,11508.6c-151-50-253-216-222-362c25-119,136-230,254-255c194-41,395,142,375,339c-11,105-90,213-190,262        C1663.7,11521.6,1569.7,11528.6,1507.7,11508.6z">
+                    </path>
+                    <path
+                      d="M227.7,10228.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,10241.6,289.7,10248.6,227.7,10228.6z">
+                    </path>
+                    <path
+                      d="M1507.7,10228.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,10241.6,1569.7,10248.6,1507.7,10228.6z">
+                    </path>
+                    <path
+                      d="M227.7,8948.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,8961.6,289.7,8968.6,227.7,8948.6z">
+                    </path>
+                    <path
+                      d="M1507.7,8948.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,8961.6,1569.7,8968.6,1507.7,8948.6z">
+                    </path>
+                    <path
+                      d="M227.7,7668.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,7681.6,289.7,7688.6,227.7,7668.6z">
+                    </path>
+                    <path
+                      d="M1507.7,7668.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,7681.6,1569.7,7688.6,1507.7,7668.6z">
+                    </path>
+                    <path
+                      d="M227.7,6388.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,6401.6,289.7,6408.6,227.7,6388.6z">
+                    </path>
+                    <path
+                      d="M1507.7,6388.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,6401.6,1569.7,6408.6,1507.7,6388.6z">
+                    </path>
+                    <path
+                      d="M227.7,5108.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,5121.6,289.7,5128.6,227.7,5108.6z">
+                    </path>
+                    <path
+                      d="M1507.7,5108.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,5121.6,1569.7,5128.6,1507.7,5108.6z">
+                    </path>
+                    <path
+                      d="M227.7,3828.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,3841.6,289.7,3848.6,227.7,3828.6z">
+                    </path>
+                    <path
+                      d="M1507.7,3828.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,3841.6,1569.7,3848.6,1507.7,3828.6z">
+                    </path>
+                    <path
+                      d="M227.7,2548.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,2561.6,289.7,2568.6,227.7,2548.6z">
+                    </path>
+                    <path
+                      d="M1507.7,2548.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,2561.6,1569.7,2568.6,1507.7,2548.6z">
+                    </path>
+                    <path
+                      d="M227.7,1268.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,1281.6,289.7,1288.6,227.7,1268.6z">
+                    </path>
+                    <path
+                      d="M1507.7,1268.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,1281.6,1569.7,1288.6,1507.7,1268.6z">
+                    </path>
+                  </g>
+                </svg>
+                <!-- END of SVG dots-->
+              </div>
+              <div class="dots-4">
+                <!-- SVG Dots-->
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+                  y="0px" viewBox="0 0 191.6 1215.4" style="enable-background: new 0 0 191.6 1215.4"
+                  xml:space="preserve">
+                  <g transform="translate(0.000000,1280.000000) scale(0.100000,-0.100000)">
+                    <path
+                      d="M227.7,12788.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,12801.6,289.7,12808.6,227.7,12788.6z">
+                    </path>
+                    <path
+                      d="M1507.7,12788.6c-151-50-253-216-222-362c25-119,136-230,254-255c194-41,395,142,375,339c-11,105-90,213-190,262        C1663.7,12801.6,1569.7,12808.6,1507.7,12788.6z">
+                    </path>
+                    <path
+                      d="M227.7,11508.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,11521.6,289.7,11528.6,227.7,11508.6z">
+                    </path>
+                    <path
+                      d="M1507.7,11508.6c-151-50-253-216-222-362c25-119,136-230,254-255c194-41,395,142,375,339c-11,105-90,213-190,262        C1663.7,11521.6,1569.7,11528.6,1507.7,11508.6z">
+                    </path>
+                    <path
+                      d="M227.7,10228.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,10241.6,289.7,10248.6,227.7,10228.6z">
+                    </path>
+                    <path
+                      d="M1507.7,10228.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,10241.6,1569.7,10248.6,1507.7,10228.6z">
+                    </path>
+                    <path
+                      d="M227.7,8948.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,8961.6,289.7,8968.6,227.7,8948.6z">
+                    </path>
+                    <path
+                      d="M1507.7,8948.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,8961.6,1569.7,8968.6,1507.7,8948.6z">
+                    </path>
+                    <path
+                      d="M227.7,7668.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,7681.6,289.7,7688.6,227.7,7668.6z">
+                    </path>
+                    <path
+                      d="M1507.7,7668.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,7681.6,1569.7,7688.6,1507.7,7668.6z">
+                    </path>
+                    <path
+                      d="M227.7,6388.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,6401.6,289.7,6408.6,227.7,6388.6z">
+                    </path>
+                    <path
+                      d="M1507.7,6388.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,6401.6,1569.7,6408.6,1507.7,6388.6z">
+                    </path>
+                    <path
+                      d="M227.7,5108.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,5121.6,289.7,5128.6,227.7,5108.6z">
+                    </path>
+                    <path
+                      d="M1507.7,5108.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,5121.6,1569.7,5128.6,1507.7,5108.6z">
+                    </path>
+                    <path
+                      d="M227.7,3828.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,3841.6,289.7,3848.6,227.7,3828.6z">
+                    </path>
+                    <path
+                      d="M1507.7,3828.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,3841.6,1569.7,3848.6,1507.7,3828.6z">
+                    </path>
+                    <path
+                      d="M227.7,2548.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,2561.6,289.7,2568.6,227.7,2548.6z">
+                    </path>
+                    <path
+                      d="M1507.7,2548.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,2561.6,1569.7,2568.6,1507.7,2548.6z">
+                    </path>
+                    <path
+                      d="M227.7,1268.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,1281.6,289.7,1288.6,227.7,1268.6z">
+                    </path>
+                    <path
+                      d="M1507.7,1268.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,1281.6,1569.7,1288.6,1507.7,1268.6z">
+                    </path>
+                  </g>
+                </svg>
+                <!-- END of SVG dots-->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <section class="bg-light py-5">
+    <div class="container px-5">
+      <div class="row gx-5 justify-content-center text-left my-3">
+        <h2 class="display-5 fw-bolder">
+          <span class="text-gradient">About Me</span>
+        </h2>
+      </div>
+      <div class="row gx-5">
+        <div class="container">
+          <div class="row">
+            <!-- First Card -->
+            <div class="col-md-4 mb-4">
+              <div class="card custom-card p-3">
+                <div class="d-flex align-items-center mb-3">
+                  <i class="bi bi-mortarboard me-3" style="font-size: 2rem;"></i>
+                  <h3 class="mb-0">University Student</h3>
+                </div>
+                <p class="card-text fs-5">
+                  As an enthusiastic student, my passion for technology drives me to explore new horizons and embrace
+                  challenges
+
+
+                </p>
+              </div>
+            </div>
+
+            <!-- Second Card -->
+            <div class="col-md-4 mb-4">
+              <div class="card custom-card p-3">
+                <div class="d-flex align-items-center mb-3">
+                  <i class="bi bi-stack me-3" style="font-size: 2rem;"></i>
+                  <h3 class="mb-0">Full-Stack Developer</h3>
+                </div>
+                <p class="card-text fs-5">
+                  I am a full-stack developer with a keen interest in developing web applications and software solutions
+
+
+                </p>
+              </div>
+            </div>
+
+            <!-- Third Card -->
+            <div class="col-md-4 mb-4">
+              <div class="card custom-card p-3">
+                <div class="d-flex align-items-center mb-3">
+                  <i class="bi bi-balloon me-3" style="font-size: 2rem;"></i>
+                  <h3 class="mb-0">Innovative</h3>
+                </div>
+                <p class="card-text fs-5">
+                  I am always looking for new ways to innovate and improve my work, and I am not afraid to take risks
+
+
+                </p>
+              </div>
+            </div>
+          </div>
+          <span id="resume"></span>
+        </div>
+
+
+
+  </section>
+
+  <section class="container px-5 my-4">
+    <div class="row gx-5 justify-content-between align-items-center mb-5">
+      <!-- Left-aligned text -->
+      <div class="col-md-6">
+        <h1 class="display-5 fw-bolder mb-0">
+          <span class="text-gradient d-inline">Resume</span>
+        </h1>
+      </div>
+
+      <!-- Right-aligned button -->
+      <div class="col-md-6 text-md-end ">
+        <a class="btn bg-gradient-primary-to-secondary px-3 py-2  text-light" href="assets/resume.pdf">
+          <div class="d-inline-block bi bi-download me-1"></div>
+          Download Resume
+        </a>
+      </div>
+    </div>
+    <div class="container-fluid">
+      <div class="row">
+        <!-- Experience Column -->
+        <div class="col-md-6">
+          <section>
+            <div class="d-flex align-items-center mb-4 ms-sm-3">
+              <div class="feature bg-primary bg-gradient-primary-to-secondary text-white rounded-3 me-3">
+                <i class="bi bi-briefcase-fill"></i>
+              </div>
+              <h3 class="fw-bolder mb-0 ">
+                <span class="text-gradient d-inline">Work Experience</span>
+              </h3>
+            </div>
+
+            <div class="container">
+              <!-- First Resume Item -->
+              <div class="card resume-card shadow rounded-3 mb-5">
+                <div class="card-body p-4">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <h4 class="mb-0">Software Development Intern</h4>
+                    <small class="text-muted">May 2024 – Sept 2024</small>
+                  </div>
+                  <small class="text-muted">Reflectivity.io</small>
+                  <ul class="mt-3 list">
+                    <li class="mb-2">Developed project management skills by analyzing technological requirements and
+                      translating
+                      them into measurable, actionable tasks.</li>
+                    <li class="mb-2">Increased resource efficiency by 18% by refactoring and modernizing the backend
+                      middleware
+                      engine, improving input validation, and optimizing workflows.</li>
+
+                    <li class="mb-2">Performed thorough code reviews and strengthened testing processes, boosting team
+                      collaboration
+                      and ensuring high-quality code.</li>
+                  </ul>
+                </div>
+              </div>
+
+              <!-- Second Resume Item -->
+              <div class="card resume-card shadow rounded-3 mb-5">
+                <div class="card-body p-4">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <h4 class="mb-0">Software Intern</h4>
+                    <small class="text-muted">Apr 2023 – Aug 2023</small>
+                  </div>
+                  <small class="text-muted">Reflectivity.io</small>
+                  <ul class="mt-3 list">
+                    <li class="mb-2">Built efficient backend systems on AWS Lambda using the Serverless framework,
+                      enhancing
+                      scalability and reducing infrastructure overhead.</li>
+                    <li class="mb-2">Created responsive web applications using front-end frameworks like Angular,
+                      optimizing user
+                      interfaces and improving site functionality.</li>
+                    <li class="mb-2">Created detailed documentation for development processes, leading to the
+                      implementation of
+                      efficient and modern coding practices.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+
+          </section>
+        </div>
+
+        <!-- Education & Skills Column -->
+        <div class="col-md-6">
+          <section>
+            <div class="d-flex align-items-center mb-4 ms-sm-2">
+              <div class="feature bg-primary bg-gradient-primary-to-secondary text-white rounded-3 me-3">
+                <i class="bi bi-journal-bookmark-fill"></i>
+              </div>
+              <h3 class="fw-bolder mb-0 ">
+                <span class="text-gradient d-inline">Education</span>
+              </h3>
+            </div>
+
+            <!-- Education Card 1-->
+            <div class="card resume-card shadow rounded-3 mb-5">
+              <div class="card-body p-4">
+                <div class="d-flex justify-content-between align-items-center">
+                  <h4 class="mb-0">University of Toronto</h4>
+                  <small class="text-muted">May 2024 – Present</small>
+                </div>
+                <small class="text-muted">Technology Coding Society</small>
+                <div class="card-body"> I'm currently studying at the University of Toronto, focusing on the
+                  intersection of technology, coding, and
+                  communication, with a solid foundation in computer science.</div>
+              </div>
+            </div>
+            <div class="d-flex align-items-center mb-4 ms-sm-3">
+              <div class="feature bg-primary bg-gradient-primary-to-secondary text-white rounded-3 me-3">
+                <i class="bi bi-tools"></i>
+              </div>
+              <h3 class="fw-bolder mb-0">
+                <span class="text-gradient d-inline">Professional Skills</span>
+              </h3>
+            </div>
+            <section>
+              <!-- Skillset Card-->
+              <div class="card resume-card shadow rounded-3 mb-5">
+                <div class="card-body p-5">
+
+                  <!-- Skill list-->
+                  <div class="mb-0 text-color-dark">
+
+                    <div class="row row-cols-1 row-cols-md-3 mb-4">
+                      <div class="col mb-4 mb-md-0">
+                        <div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">
+                          HTML
+                        </div>
+                      </div>
+                      <div class="col mb-4 mb-md-0">
+                        <div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">
+                          CSS
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">
+                          JavaScript
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row row-cols-1 row-cols-md-3 mb-3">
+                      <div class="col mb-4 mb-md-0">
+                        <div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">
+                          Python
+                        </div>
+                      </div>
+                      <div class="col mb-4 mb-md-0">
+                        <div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">
+                          TypeScript
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">
+                          Node.js
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row row-cols-1 row-cols-md-3  mb-3">
+                      <div class="col mb-4 mb-md-0">
+                        <div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">
+                          Java
+                        </div>
+                      </div>
+                      <div class="col mb-4 mb-md-0">
+                        <div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">
+                          C#
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">
+                          C
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row row-cols-1 row-cols-md-3 mb-3">
+                      <div class="col mb-4 mb-md-0">
+                        <div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">
+                          React
+                        </div>
+                      </div>
+                      <div class="col mb-4 mb-md-0">
+                        <div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">
+                          AWS
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">
+                          Terraform
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row row-cols-1 row-cols-md-3">
+                      <div class="col mb-4 mb-md-0">
+                        <div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">
+                          Git
+                        </div>
+                      </div>
+                      <div class="col mb-4 mb-md-0">
+                        <div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">
+                          Postgress
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">
+                          MySQL
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+          </section>
+        </div>
+      </div>
+      <span id="projects"></span>
+    </div>
+
+
+  </section>
+
+  <section class="container px-5 my-4">
+    <div class="row gx-5 justify-content-between align-items-center mb-5">
+      <!-- Left-aligned text -->
+      <div class="col-md-6">
+        <h1 class="display-5 fw-bolder mb-0">
+          <span class="text-gradient d-inline">Projects</span>
+        </h1>
+      </div>
+    </div>
+    <div class="container-fluid">
+      <div class="row gx-5 justify-content-center">
+        <div class="col-lg-9 col-xl-9 col-xxl-9">
+          <!-- Project Card 1-->
+          <div class="card overflow-hidden shadow rounded-4 mb-5 custom-card">
+            <div class="card-body p-0">
+              <div class="d-flex flex-column flex-md-row align-items-center">
+                <div class="p-5">
+                  <h2 class="fw-bolder">FocusPulse</h2>
+                  <p>
+                    I created FocusPulse, a full-stack web app that gamifies productivity by using React on the front
+                    end and integrating with the Chrome API for browser functionality. For the backend, I developed a
+                    suite
+                    of TypeScript
+                    microservices to handle key features. The app offers customizable options, specifically designed
+                    with
+                    neurodiverse
+                    users in mind, focusing on accessibility and boosting user engagement through adaptive time
+                    management
+                    tools.
+                  </p>
+                </div>
+                <img class="img-fluid card-img" src="assets/focusPulse.png" alt="..." />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid">
+      <div class="row gx-5 justify-content-center">
+        <div class="col-lg-9 col-xl-9 col-xxl-9">
+          <!-- EduForm Project Card-->
+          <div class="card overflow-hidden shadow rounded-4 mb-5 custom-card">
+            <div class="card-body p-0">
+              <div class="d-flex flex-column flex-md-row align-items-center">
+                <div class="p-5">
+                  <h2 class="fw-bolder">EduForm</h2>
+                  <p>
+                    I'm developing <strong>EduForm</strong>, an AI-powered tool that helps educators effortlessly create
+                    custom worksheets using a large language model (LLM). This streamlines the process of generating
+                    personalized learning materials.
+                    The tool is designed with a focus on user-friendliness and scalability, using Bootstrap for
+                    responsive
+                    design and AWS Postgres for cloud hosting to ensure accessibility and reliable performance for
+                    educators.
+                  </p>
+                </div>
+                <img class="img-fluid card-img" src="assets/eduform.png" alt="EduForm image" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid">
+      <div class="row gx-5 justify-content-center">
+        <div class="col-lg-9 col-xl-9 col-xxl-9">
+          <!-- Headlines to Moonshots Project Card-->
+          <div class="card overflow-hidden shadow rounded-4 mb-5 custom-card">
+            <div class="card-body p-0">
+              <div class="d-flex flex-column flex-md-row align-items-center">
+                <div class="p-5">
+                  <h2 class="fw-bolder">Headlines to Moonshots</h2>
+                  <p>
+                    I created "Headlines to Moonshots: How The Media Covered One Giant Leap for Mankind"
+                    a podcast.
+                  </p>
+                </div>
+                <video class="img-fluid video-size card-img" src="assets/podcast.mp4" controls
+                  alt="Headlines to Moonshots podcast" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+  <section class="container px-5 my-3" id="blog">
+    <div class="row gx-5 justify-content-between align-items-center mb-5 ">
+      <!-- Left-aligned text -->
+      <div class="col-md-6">
+        <h1 class="display-5 fw-bolder mb-0">
+          <span class="text-gradient d-inline">Blog</span>
+        </h1>
+      </div>
+    </div>
+    <div class="container-fluid">
+      <div class="row gx-5 justify-content-center">
+        <div class="col-lg-10 col-xl-10 col-xxl-10">
+          <!-- Blog-->
+          <div class="card overflow-hidden shadow rounded-4  mb-5 custom-card bg-light">
+            <div class="card-body p-0">
+              <div class="d-flex align-items-stretch">
+                <div id="carouselExample" class="carousel slide">
+                  <div class="carousel-inner">
+                    <!-- Blog Entry 1-->
+                    <div class="carousel-item active">
+                      <div class="p-5 px-xl-6">
+                        <div class="d-flex justify-content-between align-items-center mb-4">
+                          <h4 class="mb-0">Laying the Groundwork — Starting the FocusPulse Journey</h4>
+                          <small class="text-muted">June 10 2024</small>
+                        </div>
+                        <p>
+                          It’s official! We’ve begun the development of FocusPulse, our productivity extension aimed at
+                          helping users stay
+                          focused
+                          and motivated. In this first stage, we focused on planning the key features and setting up the
+                          core infrastructure
+                          of
+                          the app.
+                        </p>
+
+                        <!-- Table for Development Phases -->
+                        <table class="table table-sm">
+                          <thead>
+                            <tr>
+                              <th scope="col">Phase</th>
+                              <th scope="col">Focus</th>
+                              <th scope="col">Technologies Used</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+
+                            <tr>
+                              <td>Backend Setup</td>
+                              <td>Integrating TypeScript microservices for user data handling</td>
+                              <td>TypeScript, Node.js</td>
+                            </tr>
+                            <tr>
+                              <td>Browser Integration</td>
+                              <td>Exploring Chrome API for idle tracking</td>
+                              <td>Chrome API, JavaScript</td>
+                            </tr>
+                            <tr>
+                              <td>Core Functionality Development</td>
+                              <td>Prototyping features, building out main functions</td>
+                              <td>React, Redux</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+
+                    <!-- Blog Entry 2-->
+                    <div class="carousel-item">
+                      <div class="p-5 px-xl-6">
+                        <div class="d-flex justify-content-between align-items-center mb-4">
+                          <h4 class="mb-0"> Prototyping and Feature Development</h4>
+                          <small class="text-muted">June 23 2024</small>
+                        </div>
+                        <p>
+                          We’ve made significant progress over the past few weeks, and I’m excited to share some
+                          updates. The initial prototype of
+                          FocusPulse is up and running, and it’s feeling more real every day!
+                        </p>
+                        <p class="mb">We’ve been working hard to implement one of the core features: customizable focus
+                          sessions. Users will be able to tailor
+                          their focus/break intervals, which is key to making FocusPulse a tool that works for everyone.
+                          We also placed a huge
+                          emphasis on accessibility, especially for neurodiverse users. The interface now includes a
+                          range of settings that can be
+                          personalized to fit different productivity styles, helping users manage their time more
+                          effectively.
+                        </p>
+
+                        <p>
+                          The next big step was creating a points-based reward system that keeps users motivated. Every
+                          completed focus session
+                          will give users points, which can be tracked and compared to previous days, weeks, or months
+                          to maintain a streak. We’re
+                          currently fine-tuning the backend to handle user data securely and ensuring the app syncs
+                          effortlessly with Chrome’s
+                          native functionality.
+
+                        </p>
+                      </div>
+                    </div>
+                    <!-- Blog Entry 3-->
+                    <div class="carousel-item">
+                      <div class="p-5 px-xl-6">
+                        <div class="d-flex justify-content-between align-items-center mb-4">
+                          <h4 class="mb-0"> Beta Testing and Final Touches</h4>
+                          <small class="text-muted">July 30 2024</small>
+                        </div>
+                        <p>
+                          We’re nearing the finish line! FocusPulse is now in its beta testing phase, and we’re getting
+                          invaluable feedback from
+                          our early testers. The primary focus has been refining the user experience, ensuring the app
+                          runs smoothly and is free
+                          of bugs.
+
+                        </p>
+                        <p class="mb">Our Chrome integration is functioning well, allowing us to track idle time
+                          effectively. We’ve polished the streak and
+                          reward system, making it easy for users to stay motivated and see their progress over time.
+                          Another milestone was
+                          optimizing the app’s performance. After thorough testing, we managed to reduce load times and
+                          ensure smooth operation
+                          across devices.
+
+                        </p>
+
+                        <p>
+                          One of the final touches was adding a Community Page, where users can share and download
+                          presets. We’re really excited
+                          about this feature—it’ll allow the FocusPulse community to grow and help users find new ways
+                          to stay productive. The
+                          next step is rolling out the official launch, which is just around the corner. Stay tuned for
+                          more updates as we prepare
+                          to share FocusPulse with the world!
+
+
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <a class="carousel-control-prev " type="button" data-bs-target="#carouselExample"
+                    data-bs-slide="prev">
+                    <div class="feature bg-primary dark-background text-white rounded-3 me-5">
+                      <span class="bi bi-caret-left" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </div>
+
+                  </a>
+                  <a class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                    <div class="feature bg-primary dark-background text-white rounded-3 me-1">
+                      <span class="bi bi-caret-right" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </div>
+
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+
+
+  </section>
+  <section class="container px-5 my-3" id="contact">
+    <div class="row gx-5 justify-content-between align-items-center mb-5 ">
+      <!-- Left-aligned text -->
+      <div class="col-md-6">
+        <h1 class="display-5 fw-bolder mb-0">
+          <span class="text-gradient d-inline">Get In Touch</span>
+        </h1>
+      </div>
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-md-4 ms-sm-2">
+        <section>
+
+          <div class="container">
+            <!-- First Resume Item -->
+            <div class="card resume-card shadow rounded-3 mb-5">
+              <div class="card-body p-4">
+
+                <h5 class="text-muted">Feel free to get in touch if you're interested. I am always avaible to talk about
+                  about development, design, and games! </h5>
+                <ul class="mt-3 list-unstyled ">
+                  <li class="mb-3 h5"><a class="styled-link" href="mailto:parthkj6@gmail.com">Email</a></li>
+                  <li class="mb-3 h5"><a class="styled-link"
+                      href="https://www.linkedin.com/in/parth---jain/">LinkedIn</a>
+                  </li>
+                  <li class="mb-3 h5"><a class="styled-link" href="https://github.com/FalconXYX/">Github</a></li>
+
+
+                </ul>
+              </div>
+            </div>
+
+
+          </div>
+
+
+        </section>
+      </div>
+      <div class="col-md-6 offset-0">
+
+        <form method="POST" id="form" class="row g-3">
+
+          <!-- Hidden Fields -->
+          <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE">
+          <input type="hidden" name="subject" value="New Submission from Web3Forms">
+          <input type="checkbox" name="botcheck" id="" style="display: none;">
+
+          <!-- Email and Name Input in a Row -->
+          <div class="col-md-9">
+            <!-- Email Input -->
+            <div class="mb-3">
+              <input type="email" class="form-control border-dark p-3" name="email" placeholder="Enter your email"
+                required>
+            </div>
+            <!-- Name Input -->
+            <div class="mb-3">
+              <input type="text" class="form-control border-dark p-3" name="name" placeholder="Enter your name"
+                required>
+            </div>
+            <!-- Message Input -->
+            <div class="mb-3">
+              <textarea class="form-control border-dark p-3" name="message" rows="4" placeholder="Enter your message"
+                required style="resize: none;"></textarea>
+            </div>
+          </div>
+
+          <!-- Submit Button with Adjusted Size -->
+          <div class="col-md-3 d-flex align-items-start">
+            <button type="submit" class="btn btn-outline-dark d-flex align-items-center"
+              style="width: auto; height: 94%;">
+              <div class="bi bi-arrow-right me-2"></div>
+            </button>
+
+          </div>
+
+          <!-- Progress Bar -->
+          <div id="progress" style="display: none;">
+            <div class="p-bar">
+              <div class="p-bar-inner"></div>
+            </div>
+          </div>
+
+          <!-- Success Modal -->
+          <div class="modal fade" id="successModal" tabindex="-1" aria-labelledby="successModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="successModalLabel">Success</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  Thanks For contacting Me I will get back to you soon!
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <style>
+            .progress-bar {
+              transition: width 0.1s ease;
+            }
+          </style>
+
+      </div>
+    </div>
+  </section>
+  <footer class="bg-white py-4 mt-auto">
+    <div class="container px-5">
+      <div class="row align-items-center justify-content-between flex-column flex-sm-row">
+        <div class="col-auto">
+          <div class="small m-0">Copyright &copy; Parth Jain 2024</div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/scripts.js"></script>
+</body>
+
 </html>
