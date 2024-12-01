@@ -74,6 +74,19 @@ nav a:hover::after {
   /* Show the underline on hover */
 }
 
+.custom-header {
+  /* Gradient that is solid white until halfway, then becomes transparent */
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 1) 50%, rgba(255, 255, 255, 0) 100%);
+}
+
+.sticky-top {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 1020;
+  /* Make sure it stays on top */
+}
+
 .styled-link {
   text-decoration: none;
   /* Remove default underline */
