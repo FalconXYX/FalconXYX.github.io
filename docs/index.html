@@ -14,9 +14,6 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
     rel="stylesheet" />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Funnel+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-    rel="stylesheet" />
   <!-- Bootstrap icons-->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" rel="stylesheet" />
   <!-- Core theme CSS (includes Bootstrap)-->
@@ -27,6 +24,19 @@
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
   <link href="css/styles.css" rel="stylesheet" />
+  <script>
+    // Gate the Projects scroll-reveal BEFORE first paint. opacity:0 only ever
+    // applies under html.pj-anim, so no-JS / old-browser / reduced-motion
+    // visitors are never left with an invisible section.
+    (function () {
+      try {
+        if ("IntersectionObserver" in window &&
+          !window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+          document.documentElement.classList.add("pj-anim");
+        }
+      } catch (e) { /* leave content visible */ }
+    })();
+  </script>
 </head>
 
 <body class="d-flex flex-column h-100">
@@ -51,9 +61,6 @@
             <a class="nav-link" href="#projects">Projects</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#blog">Blog</a>
-          </li>
-          <li class="nav-item">
             <a class="nav-link" href="#contact">Contact</a>
           </li>
         </ul>
@@ -61,7 +68,7 @@
     </div>
   </nav>
   <header class="py-5">
-    <div class="container px-5 pb-5 ">
+    <div class="container px-5">
       <div class="row gx-5 align-items-center">
         <div class="col-xxl-5">
           <!-- Header text content-->
@@ -69,11 +76,11 @@
             <h1 class="display-3 fw-bolder">
               <span class="text-gradient d-inline">Hi, I'm Parth</span>
             </h1>
-            <div class="fs-3 fw-light text-muted mb-5">
-              Software development intern experience at Reflectivity.io,
-              currently studying Computer Science at the University of Toronto.
-              I build practical full-stack products with a strong focus on
-              accessibility, performance, and modern cloud workflows.
+            <div class="fs-3 fw-light text-muted mb-4">
+              Full-stack software engineer at Plato, with a Computer Science
+              degree from the University of Toronto. I build practical products
+              with a strong focus on accessibility, performance, and modern
+              cloud workflows.
             </div>
 
             <div class="d-grid gap-3 d-sm-flex justify-content-sm-center justify-content-xxl-start mb-3">
@@ -95,9 +102,9 @@
         <div class="col-xxl-7">
           <!-- Header profile picture   id="three-container" -->
 
-          <div class="d-flex justify-content-center mt- mt-xxl-0">
+          <div class="d-flex justify-content-center mt-4 mt-xxl-0">
             <div class="profile bg-gradient-primary-to-secondary">
-              <img class="profile-img" src="assets/profile.png" alt="..." />
+              <img class="profile-img" src="assets/profile.png" alt="Parth Jain" />
               <div class="dots-1">
                 <!-- SVG Dots-->
                 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
@@ -384,76 +391,65 @@
       </div>
     </div>
   </header>
-  <section class="bg-light py-5">
+  <section class="bg-light py-3">
     <div class="container px-5">
-      <div class="row gx-5 justify-content-center text-left my-3">
-        <h2 class="display-5 fw-bolder">
-          <span class="text-gradient">About Me</span>
-        </h2>
+      <div class="row gx-5 mb-4">
+        <div class="col-12">
+          <h2 class="display-5 fw-bolder mb-0">
+            <span class="text-gradient d-inline">About Me</span>
+          </h2>
+        </div>
       </div>
       <div class="row gx-5">
-        <div class="container">
-          <div class="row">
-            <!-- First Card -->
-            <div class="col-md-4 mb-4">
-              <div class="card custom-card p-3">
-                <div class="d-flex align-items-center mb-3">
-                  <i class="bi bi-mortarboard me-3" style="font-size: 2rem;"></i>
-                  <h3 class="mb-0">Computer Science Student</h3>
-                </div>
-                <p class="card-text fs-5">
-                  Studying at the University of Toronto while building a strong
-                  base in software engineering, problem solving, and modern
-                  development practices.
-
-
-                </p>
-              </div>
+        <!-- First Card -->
+        <div class="col-md-4 mb-3">
+          <div class="card custom-card p-3 h-100">
+            <div class="d-flex align-items-center mb-2">
+              <i class="bi bi-mortarboard me-3 about-icon"></i>
+              <h3 class="h5 mb-0">Computer Science Graduate</h3>
             </div>
-
-            <!-- Second Card -->
-            <div class="col-md-4 mb-4">
-              <div class="card custom-card p-3">
-                <div class="d-flex align-items-center mb-3">
-                  <i class="bi bi-stack me-3" style="font-size: 2rem;"></i>
-                  <h3 class="mb-0">Full-Stack Developer</h3>
-                </div>
-                <p class="card-text fs-5">
-                  Building full-stack applications using React, TypeScript,
-                  Node.js, and cloud services with clean architecture,
-                  scalable backends, and user-first interfaces.
-
-
-                </p>
-              </div>
-            </div>
-
-            <!-- Third Card -->
-            <div class="col-md-4 mb-4">
-              <div class="card custom-card p-3">
-                <div class="d-flex align-items-center mb-3">
-                  <i class="bi bi-balloon me-3" style="font-size: 2rem;"></i>
-                  <h3 class="mb-0">Impact Driven</h3>
-                </div>
-                <p class="card-text fs-5">
-                  I focus on measurable outcomes, from improving backend
-                  efficiency to shipping inclusive products that support
-                  neurodiverse users.
-
-
-                </p>
-              </div>
-            </div>
+            <p class="card-text mb-0">
+              University of Toronto, class of 2026, with a strong base in
+              software engineering, problem solving, and modern development
+              practices.
+            </p>
           </div>
-          <span id="resume"></span>
         </div>
 
+        <!-- Second Card -->
+        <div class="col-md-4 mb-3">
+          <div class="card custom-card p-3 h-100">
+            <div class="d-flex align-items-center mb-2">
+              <i class="bi bi-stack me-3 about-icon"></i>
+              <h3 class="h5 mb-0">Full-Stack Engineer</h3>
+            </div>
+            <p class="card-text mb-0">
+              Building products with React, TypeScript, Node.js and cloud
+              services, with clean architecture, scalable backends, and
+              user-first interfaces.
+            </p>
+          </div>
+        </div>
 
-
+        <!-- Third Card -->
+        <div class="col-md-4 mb-3">
+          <div class="card custom-card p-3 h-100">
+            <div class="d-flex align-items-center mb-2">
+              <i class="bi bi-balloon me-3 about-icon"></i>
+              <h3 class="h5 mb-0">Impact Driven</h3>
+            </div>
+            <p class="card-text mb-0">
+              I focus on measurable outcomes, from improving backend efficiency
+              to shipping inclusive products that support neurodiverse users.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
 
-  <section class="container px-5 my-4">
-    <div class="row gx-5 justify-content-between align-items-center mb-5">
+  <section class="container px-5 my-3" id="resume">
+    <div class="row gx-5 justify-content-between align-items-center mb-4">
       <!-- Left-aligned text -->
       <div class="col-md-6">
         <h1 class="display-5 fw-bolder mb-0">
@@ -462,281 +458,311 @@
       </div>
 
       <!-- Right-aligned button -->
-      <div class="col-md-6 text-md-end ">
-        <a class="btn bg-gradient-primary-to-secondary px-3 py-2  text-light" href="assets/resume.pdf">
+      <div class="col-md-6 text-md-end">
+        <a class="btn bg-gradient-primary-to-secondary px-3 py-2 text-light" href="assets/resume.pdf">
           <div class="d-inline-block bi bi-download me-1"></div>
           Download Resume
         </a>
       </div>
     </div>
-    <div class="container-fluid">
-      <div class="row">
-        <!-- Experience Column -->
-        <div class="col-md-6">
-          <section>
-            <div class="d-flex align-items-center mb-4 ms-sm-3">
-              <div class="feature bg-primary bg-gradient-primary-to-secondary text-white rounded-3 me-3">
-                <i class="bi bi-briefcase-fill"></i>
-              </div>
-              <h3 class="fw-bolder mb-0 ">
-                <span class="text-gradient d-inline">Work Experience</span>
-              </h3>
-            </div>
-
-            <div class="container">
-              <!-- First Resume Item -->
-              <div class="card resume-card shadow rounded-3 mb-5">
-                <div class="card-body p-4">
-                  <div class="d-flex justify-content-between align-items-center">
-                    <h4 class="mb-0">Software Development Intern</h4>
-                    <small class="text-muted">May 2024 – Sept 2024</small>
-                  </div>
-                  <small class="text-muted">Reflectivity.io</small>
-                  <ul class="mt-3 list">
-                    <li class="mb-2">Developed project management skills by analyzing technological requirements and
-                      translating
-                      them into measurable, actionable tasks.</li>
-                    <li class="mb-2">Increased resource efficiency by 18% by refactoring and modernizing the backend
-                      middleware
-                      engine, improving input validation, and optimizing workflows.</li>
-                    <li class="mb-2">Reduced runtime by 6% by updating and maintaining frontend and backend
-                      dependencies, ensuring libraries were up-to-date and vulnerabilities were patched while lowering
-                      infrastructure costs.</li>
-
-                    <li class="mb-2">Performed thorough code reviews and strengthened testing processes, boosting team
-                      collaboration
-                      and ensuring high-quality code.</li>
-                  </ul>
-                </div>
-              </div>
-
-              <!-- Second Resume Item -->
-              <div class="card resume-card shadow rounded-3 mb-5">
-                <div class="card-body p-4">
-                  <div class="d-flex justify-content-between align-items-center">
-                    <h4 class="mb-0">Software Intern</h4>
-                    <small class="text-muted">Apr 2023 – Aug 2023</small>
-                  </div>
-                  <small class="text-muted">Reflectivity.io</small>
-                  <ul class="mt-3 list">
-                    <li class="mb-2">Built efficient backend systems on AWS Lambda using the Serverless framework,
-                      enhancing
-                      scalability and reducing infrastructure overhead.</li>
-                    <li class="mb-2">Created responsive web applications using front-end frameworks like Angular,
-                      optimizing user
-                      interfaces and improving site functionality.</li>
-                    <li class="mb-2">Created detailed documentation for development processes, leading to the
-                      implementation of
-                      efficient and modern coding practices.</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-
-
-          </section>
+    <div class="row gx-5">
+      <!-- Experience Column -->
+      <div class="col-md-6">
+        <div class="d-flex align-items-center mb-4">
+          <div class="feature bg-primary bg-gradient-primary-to-secondary text-white rounded-3 me-3">
+            <i class="bi bi-briefcase-fill"></i>
+          </div>
+          <h2 class="h4 fw-bolder mb-0">
+            <span class="text-gradient d-inline">Work Experience</span>
+          </h2>
         </div>
 
-        <!-- Education & Skills Column -->
-        <div class="col-md-6">
-          <section>
-            <div class="d-flex align-items-center mb-4 ms-sm-2">
-              <div class="feature bg-primary bg-gradient-primary-to-secondary text-white rounded-3 me-3">
-                <i class="bi bi-journal-bookmark-fill"></i>
-              </div>
-              <h3 class="fw-bolder mb-0 ">
-                <span class="text-gradient d-inline">Education</span>
-              </h3>
+        <ol class="pj-timeline mb-4">
+          <li class="pj-role pj-role--current">
+            <div class="pj-role__head">
+              <h3 class="pj-role__title">Full Stack Software Engineer</h3>
+              <span class="pj-role__dates">Jun 2026 &ndash; Present</span>
             </div>
+            <span class="pj-role__org">Plato</span>
+            <ul class="pj-role__bullets">
+              <li>Built responsive, accessible full-stack features and reusable
+                React and TypeScript UI components.</li>
+              <li>Streamlined simulation builder pipelines and automated testing,
+                cutting production bugs and pipeline errors by 64%.</li>
+              <li>Hardened error handling, REST integrations and QA workflows,
+                cutting iteration turnaround by 21%.</li>
+            </ul>
+          </li>
 
-            <!-- Education Card 1-->
-            <div class="card resume-card shadow rounded-3 mb-5">
-              <div class="card-body p-4">
-                <div class="d-flex justify-content-between align-items-center">
-                  <h4 class="mb-0">University of Toronto</h4>
-                  <small class="text-muted">Sep 2022 - May 2026</small>
-                </div>
-                <small class="text-muted">Bachelors (Technology Coding Society, Computer Science)</small>
-                <div class="card-body">Focused on computer science fundamentals while applying coursework in practical
-                  projects and internships.</div>
-              </div>
+          <li class="pj-role">
+            <div class="pj-role__head">
+              <h3 class="pj-role__title">Development Intern</h3>
+              <span class="pj-role__dates">May 2024 &ndash; Sep 2024</span>
             </div>
-            <div class="d-flex align-items-center mb-4 ms-sm-3">
-              <div class="feature bg-primary bg-gradient-primary-to-secondary text-white rounded-3 me-3">
-                <i class="bi bi-tools"></i>
-              </div>
-              <h3 class="fw-bolder mb-0">
-                <span class="text-gradient d-inline">Professional Skills</span>
-              </h3>
+            <span class="pj-role__org">Reflectivity.io</span>
+            <ul class="pj-role__bullets">
+              <li>Turned business requirements into specs and tickets driving
+                complex TypeScript and Python workflows.</li>
+              <li>Modernized backend middleware workflows, increasing resource
+                efficiency by 18%.</li>
+              <li>Managed technical debt and security compliance, reducing runtime
+                by 6%.</li>
+            </ul>
+          </li>
+
+          <li class="pj-role">
+            <div class="pj-role__head">
+              <h3 class="pj-role__title">Software Intern</h3>
+              <span class="pj-role__dates">Apr 2023 &ndash; Aug 2023</span>
             </div>
-            <section>
-              <!-- Skillset Card-->
-              <div class="card resume-card shadow rounded-3 mb-5">
-                <div class="card-body p-5">
+            <span class="pj-role__org">Reflectivity.io</span>
+            <ul class="pj-role__bullets">
+              <li>Built scalable serverless architecture on AWS Lambda, reducing
+                infrastructure overhead.</li>
+              <li>Created responsive Angular web applications, improving user
+                interfaces and site functionality.</li>
+            </ul>
+          </li>
+        </ol>
+      </div>
 
-                  <!-- Skill list-->
-                  <div class="mb-0 text-color-dark">
+      <!-- Education & Skills Column -->
+      <div class="col-md-6">
+        <div class="d-flex align-items-center mb-4">
+          <div class="feature bg-primary bg-gradient-primary-to-secondary text-white rounded-3 me-3">
+            <i class="bi bi-journal-bookmark-fill"></i>
+          </div>
+          <h2 class="h4 fw-bolder mb-0">
+            <span class="text-gradient d-inline">Education</span>
+          </h2>
+        </div>
 
-                    <div class="row row-cols-1 row-cols-md-3 mb-4">
-                      <div class="col mb-4 mb-md-0">
-                        <div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">
-                          JavaScript
-                        </div>
-                      </div>
-                      <div class="col mb-4 mb-md-0">
-                        <div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">
-                          HTML / CSS
-                        </div>
-                      </div>
-                      <div class="col">
-                        <div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">
-                          Python
-                        </div>
-                      </div>
-                    </div>
-                    <div class="row row-cols-1 row-cols-md-3 mb-3">
-                      <div class="col mb-4 mb-md-0">
-                        <div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">
-                          React / Angular
-                        </div>
-                      </div>
-                      <div class="col mb-4 mb-md-0">
-                        <div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">
-                          Node.js
-                        </div>
-                      </div>
-                      <div class="col">
-                        <div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">
-                          Java
-                        </div>
-                      </div>
-                    </div>
-                    <div class="row row-cols-1 row-cols-md-3  mb-3">
-                      <div class="col mb-4 mb-md-0">
-                        <div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">
-                          C#
-                        </div>
-                      </div>
-                      <div class="col mb-4 mb-md-0">
-                        <div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">
-                          C
-                        </div>
-                      </div>
-                      <div class="col">
-                        <div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">
-                          AWS
-                        </div>
-                      </div>
-                    </div>
-                    <div class="row row-cols-1 row-cols-md-3 mb-3">
-                      <div class="col mb-4 mb-md-0">
-                        <div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">
-                          Terraform
-                        </div>
-                      </div>
-                      <div class="col mb-4 mb-md-0">
-                        <div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">
-                          PostgreSQL
-                        </div>
-                      </div>
-                      <div class="col">
-                        <div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">
-                          MySQL
-                        </div>
-                      </div>
-                    </div>
-                    <div class="row row-cols-1 row-cols-md-3">
-                      <div class="col mb-4 mb-md-0">
-                        <div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">
-                          Git
-                        </div>
-                      </div>
-                      <div class="col mb-4 mb-md-0">
-                        <div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">
-                          Kotlin
-                        </div>
-                      </div>
-                      <div class="col">
-                        <div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">
-                          Google Cloud
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </section>
+        <div class="card resume-card shadow rounded-3 mb-4">
+          <div class="card-body p-3">
+            <div class="d-flex justify-content-between align-items-baseline flex-wrap gap-2">
+              <h3 class="h5 mb-0">University of Toronto</h3>
+              <small class="text-muted">Sep 2022 &ndash; Aug 2026</small>
+            </div>
+            <small class="text-muted">Bachelors (Technology Coding Society, Computer Science)</small>
+            <p class="mb-0 mt-2">Focused on computer science fundamentals while applying
+              coursework in practical projects and internships.</p>
+          </div>
+        </div>
 
-          </section>
+        <div class="d-flex align-items-center mb-4">
+          <div class="feature bg-primary bg-gradient-primary-to-secondary text-white rounded-3 me-3">
+            <i class="bi bi-tools"></i>
+          </div>
+          <h2 class="h4 fw-bolder mb-0">
+            <span class="text-gradient d-inline">Professional Skills</span>
+          </h2>
+        </div>
+
+        <div class="card resume-card shadow rounded-3 mb-4">
+          <div class="card-body p-3">
+            <!-- role="list" keeps list semantics in Safari/VoiceOver once
+                 list-style is removed -->
+            <ul class="pj-tags mb-0" role="list">
+              <!-- languages -->
+              <li class="pj-tag">HTML / CSS / JS</li>
+              <li class="pj-tag">TypeScript</li>
+              <li class="pj-tag">Python</li>
+              <li class="pj-tag">Java</li>
+              <li class="pj-tag">C#</li>
+              <li class="pj-tag">C++</li>
+              <!-- frontend -->
+              <li class="pj-tag">React</li>
+              <li class="pj-tag">Vue</li>
+              <li class="pj-tag">Angular</li>
+              <li class="pj-tag">Canvas / Web Audio</li>
+              <!-- backend / API -->
+              <li class="pj-tag">Node.js</li>
+              <li class="pj-tag">.NET</li>
+              <li class="pj-tag">REST APIs</li>
+              <li class="pj-tag">Microservices</li>
+              <li class="pj-tag">Authentication</li>
+              <li class="pj-tag">System Architecture</li>
+              <!-- cloud / infra -->
+              <li class="pj-tag">AWS</li>
+              <li class="pj-tag">Google Cloud</li>
+              <li class="pj-tag">Serverless</li>
+              <li class="pj-tag">CI/CD</li>
+              <!-- data / AI -->
+              <li class="pj-tag">Postgres / MySQL</li>
+              <li class="pj-tag">RAG</li>
+              <!-- quality -->
+              <li class="pj-tag">Automated Testing</li>
+              <li class="pj-tag">Accessibility</li>
+              <li class="pj-tag">Responsive Design</li>
+              <!-- process / tools -->
+              <li class="pj-tag">Git</li>
+              <li class="pj-tag">Agile</li>
+              <li class="pj-tag">Scrum</li>
+              <li class="pj-tag">Requirement Analysis</li>
+              <li class="pj-tag">Code Review</li>
+              <li class="pj-tag">Technical Documentation</li>
+              <li class="pj-tag">Jira</li>
+            </ul>
+          </div>
         </div>
       </div>
-      <span id="projects"></span>
     </div>
-
-
   </section>
 
-  <section class="container px-5 my-4">
-    <div class="row gx-5 justify-content-between align-items-center mb-5">
-      <!-- Left-aligned text -->
-      <div class="col-md-6">
-        <h1 class="display-5 fw-bolder mb-0">
-          <span class="text-gradient d-inline">Projects</span>
-        </h1>
-      </div>
+  <section class="pj-section" id="projects">
+    <div class="pj-head">
+      <h1 class="display-5 fw-bolder mb-0">
+        <span class="text-gradient d-inline">Projects</span>
+      </h1>
     </div>
-    <div class="container-fluid">
-      <div class="row gx-5 justify-content-center">
-        <div class="col-lg-9 col-xl-9 col-xxl-9">
-          <!-- Project Card 1-->
-          <div class="card overflow-hidden shadow rounded-4 mb-5 custom-card">
-            <div class="card-body p-0">
-              <div class="d-flex flex-column flex-md-row align-items-center">
-                <div class="p-5">
-                  <h2 class="fw-bolder">FocusPulse</h2>
-                  <p>
-                    Built a full-stack productivity application using React,
-                    Chrome API integration, and TypeScript microservices.
-                    Implemented customizable focus features tailored for
-                    neurodiverse users, with accessibility-first UX and adaptive
-                    time-management tools.
-                  </p>
-                </div>
-                <img class="img-fluid card-img" src="assets/focusPulse.png" alt="..." />
-              </div>
-            </div>
-          </div>
+
+    <!-- ===== Featured 1 — media right ===== -->
+    <article class="pj-row" data-pj-reveal>
+      <div class="pj-media pj-media--fit">
+        <img src="assets/MediSense.png" width="252" height="400" loading="lazy" decoding="async"
+          alt="MediSense screen comparing over-the-counter medication prices across pharmacies" />
+      </div>
+      <div class="pj-copy">
+        <p class="pj-eyebrow">Jan &ndash; Apr 2025</p>
+        <h2 class="pj-title">MediSense</h2>
+        <p class="pj-tagline">Making OTC medicine more accessible.</p>
+        <p class="pj-desc">
+          A medication cost-comparison platform on a microservices backend, with
+          real-time data aggregation, secure auth, and AI-driven price analysis
+          that surfaces the best available deal.
+        </p>
+        <ul class="pj-tags" role="list">
+          <li class="pj-tag">Microservices</li>
+          <li class="pj-tag">AI Price Analysis</li>
+          <li class="pj-tag">Auth</li>
+          <li class="pj-tag">React</li>
+        </ul>
+        <div class="pj-actions">
+          <a class="pj-cta" href="#https://parthjain.ca/Medisense/">View project</a>
+          <a class="pj-link" href="https://github.com/FalconXYX/Medisense">
+            <i class="bi bi-github" aria-hidden="true"></i> Source
+          </a>
         </div>
       </div>
-    </div>
+    </article>
 
-    <div class="container-fluid">
-      <div class="row gx-5 justify-content-center">
-        <div class="col-lg-9 col-xl-9 col-xxl-9">
-          <!-- MediSense Project Card-->
-          <div class="card overflow-hidden shadow rounded-4 mb-5 custom-card">
-            <div class="card-body p-0">
-              <div class="d-flex flex-column flex-md-row align-items-center">
-                <div class="p-5">
-                  <h2 class="fw-bolder">MediSense</h2>
-                  <p>
-                    Created an accessible medical cost-comparison platform by
-                    integrating advanced UI components with scalable
-                    microservices. Engineered real-time data aggregation and
-                    secure user authentication, then implemented AI-driven price
-                    analysis algorithms to help users identify optimal
-                    medication deals.
-                  </p>
-                </div>
-                <img class="img-fluid card-img" src="assets/MediSense.png" alt="MediSense project image" />
-              </div>
-            </div>
-          </div>
+    <!-- ===== Featured 2 — media left ===== -->
+    <article class="pj-row pj-row--flip" data-pj-reveal>
+      <!-- opaque white illustration, not a UI capture: --fit contains it on the
+           brand wash, where --cover would crop the monitor and the figure -->
+      <div class="pj-media pj-media--fit">
+        <img src="assets/physiofind.png" width="666" height="460" loading="lazy" decoding="async"
+          alt="Illustration of a person using a magnifying glass to search a directory of healthcare provider profiles" />
+      </div>
+      <div class="pj-copy">
+        <p class="pj-eyebrow">Jan &ndash; May 2026</p>
+        <h2 class="pj-title">Physiofind</h2>
+        <p class="pj-tagline">Find the right provider.</p>
+        <p class="pj-desc">
+          A full-stack Vue and .NET app matching patients to non-standard
+          healthcare providers, using AI aggregation and search optimization for
+          high-accuracy results.
+        </p>
+        <ul class="pj-tags" role="list">
+          <li class="pj-tag">Vue</li>
+          <li class="pj-tag">.NET</li>
+          <li class="pj-tag">TypeScript</li>
+          <li class="pj-tag">DevOps</li>
+        </ul>
+        <div class="pj-actions">
+          <a class="pj-cta" href="https://parthjain.ca/CSC301Project/#/">View project</a>
+          <a class="pj-link" href="https://github.com/FalconXYX/FalconXYX.github.io">
+            <i class="bi bi-github" aria-hidden="true"></i> Source
+          </a>
         </div>
       </div>
+    </article>
+
+    <!-- ===== Featured 3 — media right ===== -->
+    <article class="pj-row" data-pj-reveal>
+      <!-- near-square dark capture: --cover crops to a centred band through
+           Jupiter, and the starfield dissolves into the page far better than
+           the light wash of --fit would -->
+      <div class="pj-media pj-media--cover" style="--pj-focal: 50% 50%">
+        <img src="assets/space.png" width="1038" height="1102" loading="lazy" decoding="async"
+          alt="Space Opera orrery: Jupiter ringed by its moons' orbits, each moon labelled with the note it sounds" />
+      </div>
+      <div class="pj-copy">
+        <p class="pj-eyebrow">Interactive &middot; Web Audio</p>
+        <h2 class="pj-title">Space Opera</h2>
+        <p class="pj-tagline">Orbital mechanics you can hear.</p>
+        <p class="pj-desc">
+          An interactive orrery where 144 bodies across 8 real celestial systems
+          each sound a note as they orbit. Speeding up the simulation lifts those
+          cycles into hearing range, turning orbital resonances into chords.
+        </p>
+        <ul class="pj-tags" role="list">
+          <li class="pj-tag">React</li>
+          <li class="pj-tag">TypeScript</li>
+          <li class="pj-tag">Web Audio API</li>
+          <li class="pj-tag">Canvas 2D</li>
+          <li class="pj-tag">NASA / JPL Data</li>
+        </ul>
+        <div class="pj-actions">
+          <a class="pj-cta" href="https://parthjain.ca/Space-Opera/">Play it</a>
+          <a class="pj-link" href="https://github.com/FalconXYX/Space-Opera">
+            <i class="bi bi-github" aria-hidden="true"></i> Source
+          </a>
+        </div>
+      </div>
+    </article>
+
+    <!-- ===== Also built ===== -->
+    <div class="pj-minor-wrap">
+      <div class="pj-minor-head">
+        <h2 class="h4 fw-bolder mb-2">
+          <span class="text-gradient d-inline">Also built</span>
+        </h2>
+      </div>
+      <div class="pj-minor-grid">
+        <article class="pj-minor">
+          <span class="pj-minor__year">2024</span>
+          <h3 class="pj-minor__title">FocusPulse</h3>
+          <p class="pj-minor__desc">
+            A productivity app with customizable, accessibility-first focus
+            sessions built for neurodiverse users.
+          </p>
+          <ul class="pj-tags" role="list">
+            <li class="pj-tag">React</li>
+            <li class="pj-tag">TypeScript</li>
+            <li class="pj-tag">Chrome API</li>
+          </ul>
+          <div class="pj-actions">
+            <a class="pj-link" href="https://github.com/FalconXYX/FocusPulse">
+              <i class="bi bi-github" aria-hidden="true"></i> Source
+            </a>
+          </div>
+        </article>
+
+        <article class="pj-minor">
+          <span class="pj-minor__year">2026</span>
+          <h3 class="pj-minor__title">Rigged Outcomes</h3>
+          <p class="pj-minor__desc">
+            An interactive data visualization tool that tracks Polymarket trade flow and timing anomalies to uncover
+            potential
+            market manipulation.
+          </p>
+          <ul class="pj-tags" role="list">
+            <li class="pj-tag">Python</li>
+            <li class="pj-tag">Data Visualization</li>
+            <li class="pj-tag">Data Analysis Pipeline</li>
+          </ul>
+          <div class="pj-actions">
+            <a class="pj-link" href="https://parthkj6.pythonanywhere.com">
+              <i class="bi bi-box-arrow-up-right" aria-hidden="true"></i> Live site
+            </a>
+            <a class="pj-link" href="https://github.com/FalconXYX/Rigged-Outcomes">
+              <i class="bi bi-github" aria-hidden="true"></i> Source
+            </a>
+          </div>
+        </article>
+      </div>
     </div>
-
-
   </section>
 
   <section class="container px-5 my-3" id="contact">
@@ -757,8 +783,9 @@
             <div class="card resume-card shadow rounded-3 mb-5">
               <div class="card-body p-4">
 
-                <h5 class="text-muted">Feel free to get in touch if you're interested. I am always avaible to talk about
-                  about development, design, and games! </h5>
+                <h5 class="text-muted">Feel free to get in touch if you're interested. I am always available to talk
+                  about
+                  development, design, and games! </h5>
                 <ul class="mt-3 list-unstyled ">
                   <li class="mb-3 h5"><a class="styled-link" href="mailto:parthkj6@gmail.com">Email</a></li>
                   <li class="mb-3 h5"><a class="styled-link"
@@ -782,7 +809,7 @@
         <form method="POST" id="form" class="row g-3">
 
           <!-- Hidden Fields -->
-          <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE">
+          <input type="hidden" name="access_key" value="9312e4b7-9816-4a6a-9209-af7ad3444d9f">
           <input type="hidden" name="subject" value="New Submission from Web3Forms">
           <input type="checkbox" name="botcheck" id="" style="display: none;">
 
@@ -841,11 +868,14 @@
           </div>
 
           <style>
-            .progress-bar {
-              transition: width 0.1s ease;
+            /* scripts.js steps this every 100ms; styles.css transitions it over
+               1s, so the bar lagged ~10x behind the real submit. Retargeted from
+               the non-existent .progress-bar to the element actually rendered. */
+            .p-bar .p-bar-inner {
+              transition: width 0.1s linear;
             }
           </style>
-
+        </form>
       </div>
     </div>
   </section>
@@ -853,7 +883,7 @@
     <div class="container px-5">
       <div class="row align-items-center justify-content-between flex-column flex-sm-row">
         <div class="col-auto">
-          <div class="small m-0">Copyright &copy; Parth Jain 2024</div>
+          <div class="small m-0">Copyright &copy; Parth Jain 2026</div>
         </div>
       </div>
     </div>
